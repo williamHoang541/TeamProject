@@ -5,21 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TeamProject"
         mc:Ignorable="d"
-        Title="MainWindow"  Height="350" Width="600">
+        Title="Translator"  Height="350" Width="600">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-
-        <!-- Input Text -->
-        <TextBox x:Name="InputTextBox" Grid.Row="0" Margin="0,0,0,10" Height="100" TextWrapping="Wrap" AcceptsReturn="True" Grid.ColumnSpan="2"/>
-
-        <!-- Translate Button -->
-        <Button Grid.Row="1" Content="Translate" Height="30" Width="100" HorizontalAlignment="Center" Click="TranslateButton_Click" Padding="32,32"/>
-
-        <!-- Output Text -->
-        <TextBox x:Name="OutputTextBox" Grid.Row="2" Margin="0,10,0,0" Height="100" TextWrapping="Wrap" AcceptsReturn="True" IsReadOnly="True" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="InputTextBox" Grid.Row="0" Height="100" TextWrapping="Wrap" AcceptsReturn="True" Grid.ColumnSpan="2"/>
+        <Button Content="Translate" Background="#395F18" Width="108" HorizontalAlignment="Left" Click="TranslateButton_Click" Foreground="#FEF6C7" Margin="98,26,0,26" Grid.Row="1"/>
+        <Button Content="Select File" Background="#395F18" Width="110" HorizontalAlignment="Left" Click="SelectFileButton_Click" Foreground="#FEF6C7" Margin="375,26,0,26" Grid.Row="1"/>
+        <TextBox x:Name="OutputTextBox" Grid.Row="2" Height="100" TextWrapping="Wrap" AcceptsReturn="True" IsReadOnly="True" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>
